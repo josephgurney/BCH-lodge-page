@@ -1,0 +1,696 @@
+<style type="text/css">
+.divider-1 {
+height: 1px;
+width: 85px;
+background-color: #999;
+margin: auto;
+}
+
+.clearfloat {
+	clear: both;
+	display: block;
+	content: "";
+	height:0;
+	overflow: hidden;
+}
+
+#devListWrap {
+	border: 1px solid #c0c0c0;
+margin: 0 20px 20px 20px;
+width: 425px;
+display: inline-block;
+padding: 10px;
+
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.dev_details {
+	width: 90%;
+	min-height: 100px;
+	margin:20px;
+	text-align: center;
+			-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.dev_details p {
+	width: 162px;
+	margin: 0 auto;
+}
+a.lodge_button {
+	margin: 20px 0;
+	text-align: left;
+}
+
+.dev_image {
+overflow:hidden;
+}
+
+.dev_image a img {
+	height: auto;
+	width: 100%;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+opacity:1;
+}
+
+.dev_image a img:hover {
+	-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+opacity:0.8;
+
+}
+
+.dev_details .lodge_title, .lodge_icons, .lodge_location {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", serif;
+}
+.lodge_title {
+	font: 400 24px Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", serif;
+	color: #333;
+}
+.lodge_title a {
+	text-decoration:none;
+	color:inherit;
+}
+.lodge_location {
+	font: 400 16px Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", serif;
+	color: #333;
+	border-bottom: 1px solid #888;
+	padding-bottom: 8px;
+}
+.lodge_icons_wrap {
+	margin-top: 15px;
+}
+.lodge_icons {
+	margin-right: 5px;
+	background: url('http://cws-live.pulsant.microserveltd.co.uk/sites/all/themes/bluechip/images/amenity-icons-small.png') no-repeat;
+	height: 32px;
+	width: 36px;
+	display:inline-block;
+}
+.dog {
+	background-position: -5px center;
+}
+.no_dog {
+	background-position: -45px center;
+}
+.hot_tub {
+	background-position: -165px center;
+}
+.baby {
+	background-position: -85px center;
+}
+.swimming {
+	background-position: -121px center;
+}
+.wi-fi {
+	background-position: -207px center;
+}
+.seaviews {
+	background-position: -246px center;
+}
+.carparking {
+	background-position: -294px center;
+}
+.disabled {
+	background-position: -335px center;
+}
+.trees {
+	background-position: -371px center;
+}
+a.lodge_button {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", serif;
+	font-weight: normal;
+	background-color: #3796b3;
+	border: none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	color: white;
+	text-decoration: none;
+	background-image: url('/sites/all/themes/bluechip/images/white-arrow-small.png');
+	background-repeat: no-repeat;
+	background-position: 134px 11px;
+	display: block;
+	font-size: 14px;
+	height: 20px;
+	padding: 7px 20px 5px 20px;
+	width:120px;
+	margin:25px 20px 10px 0;
+	text-align: left;
+	transition:background-color .3s ease;
+}
+a.lodge_button:hover {
+	background-color: rgba(55,150,179,0.70);
+	transition:background-color .3s ease;
+}
+.quote {width:40% !important; display:inline-block !important;  margin:10px;}
+.leftfloat{float:left !important;}
+.rightfloat{float:right !important;}
+.TextAreaTop{margin: 0 10px 30px 10px;}
+ @media only screen and (max-width: 979px) and (min-width: 768px) {
+.dev_image {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+.dev_details {
+	width: 90%;
+	min-height: 100px;
+	margin:20px;
+	text-align: center;
+}
+.dev_details p {
+	width: 162px;
+	margin: 0 auto;
+}
+a.lodge_button {
+	margin: 20px 0;
+	text-align: left;
+}
+#devListWrap {
+	margin: 0 10px 10px 10px;
+	width: 347px;
+	display: inline-block;
+}
+}
+ @media only screen and (max-width: 767px) {
+	 .quote {width:100% !important; display:block !important;}
+	 .leftfloat{float:none !important;}
+	 .rightfloat{float:none !important;}
+#devListWrap {
+	margin: 0 0 10px 0;
+	width: 100%;
+	display: block;
+	padding:10px;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.dev_image {
+	width: 100%;
+	text-align: center;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.dev_details {
+	width: 100%;
+	min-height: 100px;
+	margin:10px 0;
+	text-align: center;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.dev_details p {
+	width: 162px;
+	margin: 0 auto;
+}
+a.lodge_button {
+	margin: 20px 0;
+	text-align: left;
+}</style>
+<div class="TextAreaTop">
+	<h1 class="rtecenter">
+		<span style="font-size:36px;"><em>Discover our new collection of luxury&nbsp;lodges</em></span></h1>
+	<div class="divider-1">
+		&nbsp;</div>
+	<h2 style="font-size:18px; line-height: 1.5em;">
+		Bubbling hot tubs, log burning stoves, secluded spots and stunning countryside views; luxury lodges have everything you need to escape in style.</h2>
+	<p style="font-size:13px;line-height: 1.5em;">Below you&rsquo;ll discover a variety of lodge developments to suit every taste; whether you&rsquo;re after an enclosed park with space and facilities for the whole family to enjoy, or a secluded hideaway for a romantic break.</p>
+	<p style="font-size:13px;line-height: 1.5em;">When you need an easy escape from the stress of everyday life, there&rsquo;s a lodge park that&rsquo;s got everything you&rsquo;re after within easy reach.</p>
+</div>
+<!-- lodge development start (copy from here...)-->
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/cornwall/st-ives/una"><img src="http://assets.bluechipholidays.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/james.rogers/2014/07/Greenwood_130712_25101_.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/cornwall/st-ives/una">Una</a></div>
+		<div class="lodge_location">
+			St Ives, Cornwall</div>
+		<div class="lodge_icons_wrap">
+			<!-- no dog start --><div class="lodge_icons no_dog" title="Not dog friendly">&nbsp;</div><!-- no dog end -->
+			<!-- Parking start --><div class="lodge_icons carparking" title="Parking available">&nbsp;</div><!-- Parking end -->
+			<!-- wifi start --><div class="lodge_icons wi-fi" title="Internet / Wi-Fi">&nbsp;</div><!-- wifi end -->
+            <!-- baby friendly --><div class="lodge_icons baby" title="Baby friendly">&nbsp;</div><!-- baby friendly end -->
+				
+		</div>
+		<p><a class="lodge_button" href="/cornwall/st-ives/una">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<!-- lodge development end (finish copying here...)-->
+
+
+<!-- lodge development start (copy from here...)-->
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/sussex/the-south-downs/south-downs-lodges"><img src="http://assets.bluechipholidays.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/james.rogers/2014/08/SDN%20Cottage%201-18.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/sussex/the-south-downs/south-downs-lodges">South Downs Lodges</a></div>
+		<div class="lodge_location">
+			Hassocks, West Sussex</div>
+		<div class="lodge_icons_wrap">
+			<!-- dog start --><div class="lodge_icons dog" title="Dog friendly">&nbsp;</div><!-- dog end -->
+			<!-- Parking start --><div class="lodge_icons carparking" title="Parking available">&nbsp;</div><!-- Parking end -->
+			<!-- wifi start --><div class="lodge_icons wi-fi" title="Internet / Wi-Fi">&nbsp;</div><!-- wifi end -->
+            <!-- baby friendly --><div class="lodge_icons baby" title="Baby friendly">&nbsp;</div><!-- baby friendly end -->
+		</div>
+		<p><a class="lodge_button" href="/sussex/the-south-downs/south-downs-lodges">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<!-- lodge development end (finish copying here...)-->
+
+
+
+
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/devon/salcombe-south-hams/gara-mill"><img src="http://assets.bluechipholidays.co.uk:8080/emshare/views/modules/asset/downloads/preview/mediumplus/users/laura/2014/08/View_4.jpg/thumb.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/devon/salcombe-south-hams/gara-mill">Gara Mill</a></div>
+		<div class="lodge_location">
+			Dartmouth, Devon</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/devon/salcombe-south-hams/gara-mill">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/somerset/cricket-st-thomas/swandown-lodges-estate"><img src="http://cws-live.pulsant.microserveltd.co.uk/sites/default/files/styles/gallery_col/public/2033_1400081940932.jpg?itok=-GzKlTwV" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/somerset/cricket-st-thomas/swandown-lodges-estate">Swandown Lodges</a></div>
+		<div class="lodge_location">
+			Cricket St Thomas, Somerset</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons no_dog" title="Not dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons swimming" title="Swimming Pool">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/somerset/cricket-st-thomas/swandown-lodges-estate">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/cornwall/fowey/Trenython-Manor-Estate"><img src="http://cws-live.pulsant.microserveltd.co.uk/sites/default/files/styles/gallery_col/public/1976_BVL_Living.jpg?itok=z9S6RMqo" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/cornwall/fowey/Trenython-Manor-Estate">Trenython Manor Estate</a></div>
+		<div class="lodge_location">
+			Fowey, South Cornwall</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons no_dog" title="Not dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/cornwall/fowey/Trenython-Manor-Estate">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/devon/honiton/lakeview-manor"><img src="http://46.236.27.122:8080/emshare/views/modules/asset/downloads/preview/mediumplus/users/james.rogers/2014/04/Decking_2.jpg/thumb.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/devon/honiton/lakeview-manor">Lakeview Manor</a></div>
+		<div class="lodge_location">
+			Honiton, East Devon</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons no_dog" title="Not dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/devon/honiton/lakeview-manor">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/devon/exeter/south-view-lodges"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/justine.schaffner/2014/01/Willow_nightbalcony004.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/devon/exeter/south-view-lodges">South View Lodges</a></div>
+		<div class="lodge_location">
+			Exeter, Devon</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/devon/exeter/south-view-lodges">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/somerset/cheddar/strawberryfield-park"><img src="http://cws-live.pulsant.microserveltd.co.uk/sites/default/files/styles/gallery_col/public/2004_1397119962739.jpg?itok=9CIH0n17" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/somerset/cheddar/strawberryfield-park">Strawberryfield Park</a></div>
+		<div class="lodge_location">
+			Cheddar, Somerset</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/somerset/cheddar/strawberryfield-park">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/wales/knighton/black-hall-lodges"><img src="http://46.236.27.122:8080/emshare/views/modules/asset/downloads/preview/mediumplus/users/lindsay/2014/03/Sitting area 2_39102.jpg/thumb.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/wales/knighton/black-hall-lodges">Black Hall Lodges</a></div>
+		<div class="lodge_location">
+			Knighton, Wales</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons no_dog" title="Not dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/wales/knighton/black-hall-lodges">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/devon/sidmouth/weston-bay"><img src="http://46.236.27.122:8080/emshare/views/modules/asset/downloads/preview/mediumplus/users/tara/2013/08/Living_Area_c.jpg/thumb.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/devon/sidmouth/weston-bay">Weston Bay</a></div>
+		<div class="lodge_location">
+			Sidmouth, East Devon</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/devon/sidmouth/weston-bay">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/dorset/lyme-regis/pinewood-lodges"><img src="http://assets.bluechipholidays.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/lindsay/2014/04/Exterior_b.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/dorset/lyme-regis/pinewood-lodges">Pinewood Lodges</a></div>
+		<div class="lodge_location">
+			Lyme Regis, Dorset</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/dorset/lyme-regis/pinewood-lodges">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/devon/salcombe-south-hams/salcombe-retreats"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/justine.schaffner/2014/02/patio%20area_004.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/devon/salcombe-south-hams/salcombe-retreats">Salcombe Retreat</a></div>
+		<div class="lodge_location">
+			Salcombe, South Devon</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/devon/salcombe-south-hams/salcombe-retreats">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/cornwall/watergate-bay-mawgan-porth/retallack"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/mikeD/2013/08/exterior_0002.jpg_16715.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/cornwall/watergate-bay-mawgan-porth/retallack">Retallack</a></div>
+		<div class="lodge_location">
+			St. Columb Major, North Cornwall</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/cornwall/watergate-bay-mawgan-porth/retallack">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/cornwall/st-austell-eden/natural-retreats"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/mikeD/2013/08/Villa%203020100219_005DSC_0072.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/cornwall/st-austell-eden/natural-retreats">Natural Retreats</a></div>
+		<div class="lodge_location">
+			St. Austell, South Cornwall</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/cornwall/st-austell-eden/natural-retreats">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/cornwall/padstow-wadebridge/rosehill"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/101/2013/08/LP20090513_058DSC_0716.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/cornwall/padstow-wadebridge/rosehill">Rosehill</a></div>
+		<div class="lodge_location">
+			Little Petherick, North Cornwall</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/cornwall/padstow-wadebridge/rosehill">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/cornwall/padstow-wadebridge/the-towans"><img src="http://cws-live.pulsant.microserveltd.co.uk/sites/default/files/styles/gallery_col/public/1599_1343820980819.jpg?itok=Y5AQr-ot" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/cornwall/padstow-wadebridge/the-towans">The Towans</a></div>
+		<div class="lodge_location">
+			St. Merryn, North Cornwall</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/cornwall/padstow-wadebridge/the-towans">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/cornwall/liskeard/doublebois-collection"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/mikeD/2013/08/exterior_0001.jpg_9615.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/cornwall/liskeard/doublebois-collection">Doublebois Collection</a></div>
+		<div class="lodge_location">
+			Liskeard, North Cornwall</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons no_dog" title="Not dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/cornwall/liskeard/doublebois-collection">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/isle-of-wight/bembridge/the-summer-house"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/MikeT/2014/03/DSC01721.jpeg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/isle-of-wight/bembridge/the-summer-house">The Summer House</a></div>
+		<div class="lodge_location">
+			Bembridge, Isle of Wight</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons no_dog" title="Not dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/isle-of-wight/bembridge/the-summer-house">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/isle-of-wight/newport-country/the-water-mill"><img src="http://cws-live.pulsant.microserveltd.co.uk/sites/default/files/styles/gallery_col/public/1314_king01.jpg?itok=Uub5VwNt" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/isle-of-wight/newport-country/the-water-mill">The Water Mill</a></div>
+		<div class="lodge_location">
+			Newport, Isle of Wight</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons no_dog" title="Not dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/isle-of-wight/newport-country/the-water-mill">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/devon/bideford/oak-lodge"><img src="http://em.pulsant.microserveltd.co.uk:8080/media/catalogs/public/downloads/preview/custom_gallery/users/adriano/2013/08/BCV%20FORST%20LODGE%20%20003.jpg/gallery.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/devon/bideford/oak-lodge">Oak Lodge</a></div>
+		<div class="lodge_location">
+			Bideford, North Devon</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/devon/bideford/oak-lodge">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<div id="devListWrap">
+	<div class="dev_image">
+		<a href="/somerset/taunton/mill-meadow"><img src="http://46.236.27.122:8080/emshare/views/modules/asset/downloads/preview/mediumplus/users/mikeD/2013/08/Flycatcher%20Lodge%20Exteriors%20-3.JPG/thumb.jpg" /></a></div>
+	<div class="dev_details">
+		<div class="lodge_title">
+			<a href="/somerset/taunton/mill-meadow">Mill Meadow</a></div>
+		<div class="lodge_location">
+			Kingston St. Mary, Somerset</div>
+		<div class="lodge_icons_wrap">
+			<div class="lodge_icons dog" title="Dog friendly">
+				&nbsp;</div>
+			<div class="lodge_icons carparking" title="Parking available">
+				&nbsp;</div>
+			<div class="lodge_icons wi-fi" title="Internet / Wi-Fi">
+				&nbsp;</div>
+			<div class="lodge_icons baby" title="Baby friendly">
+				&nbsp;</div>
+			<div class="lodge_icons hot_tub" title="Hot tub">
+				&nbsp;</div>
+		</div>
+		<p><a class="lodge_button" href="/somerset/taunton/mill-meadow">View Lodges</a></p>
+	</div>
+	<div class="clearfloat">
+		&nbsp;</div>
+</div>
+<p>&nbsp;</p>
